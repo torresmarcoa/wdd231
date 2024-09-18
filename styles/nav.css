@@ -1,0 +1,62 @@
+
+header {
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: var(--p-color);
+    color: var(--ptext-color);
+    margin: auto;
+    font-size: 0.85rem;
+}
+
+#hamMenu::before {
+    content: "≡";
+}
+
+#hamMenu {
+    display: block;
+    font-size: 1.50rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--ptext-color);
+    padding: 1rem;
+}
+
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    color: var(--ptext-color);
+    display: block;
+    padding: 0.75rem;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: clamp(1.25rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover,
+.navigation a:active {
+    color: var(--ptext-color);
+    background-color: var(--s-color);
+}
+
+.show li {
+    display: block;
+}
+
+#hamMenu.show::before {
+    content: "X";
+}
+
+.hide-header h1 {
+    display: none;
+}

@@ -1,0 +1,54 @@
+:root {
+    --p-color: #11161b;
+    --s-color: #27488f;
+    --ptext-color: white;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Inria Sans", sans-serif;
+}
+
+p,
+a {
+    font-family: "Raleway", sans-serif;
+    ;
+}
+
+body {
+    text-align: center;
+}
+
+#profilePic {
+    margin: auto;
+    padding: 0.90rem;
+    border-radius: 50%;
+}
+
+#teotihuacan {
+    width: 100%;
+    height: 100%;
+}
+
+#courseWork,
+#country,
+#certificate {
+    margin: 50px;
+}
+
+#courseWork h2,
+#country h2,
+#certificate h2 {
+    background-color: var(--s-color);
+    color: var(--ptext-color);
+    padding: 1rem;
+}
+
+footer {
+    background-color: var(--s-color);
+    color: var(--ptext-color);
+    text-align: center;
+    padding: 1rem;
+    margin: auto;
+}
