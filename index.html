@@ -14,15 +14,21 @@
         rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/nav-large.css">
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-large.css">
     <script src="scripts/nav.js" defer></script>
     <script src="scripts/getdate.js" defer></script>
+    <script src="scripts/certificaterequirements.js" defer></script>
 </head>
 
 <body>
     <header>
-        <img id="profilePic" src="images/profilepic.webp" alt="Marco Torres" loading="lazy">
-        <h1>Marco A. Torres A.</h1>
+
+        <div>
+            <img id="profilePic" src="images/profilepic.webp" alt="Marco Torres" loading="lazy">
+            <h1>Marco A. Torres A.</h1>
+        </div>
 
         <nav>
             <ul class="navigation">
@@ -49,13 +55,21 @@
 
         <section id="country">
             <h2>Mexico State, Mexico</h2>
-            <img id="teotihuacan" src="images/teotihuacan.webp" alt="teotihuacan" loading="lazy">
+            <picture id="teotihuacan">
+                <source srcset="images/teotihuacan-large.webp" media="(min-width:640px)">
+                <img src="images/teotihuacan.webp" alt="teotihuacan" width="300px" height="175px" loading="lazy">
+            </picture>
+            
             <p>Teotihuacan</p>
         </section>
 
         <section id="certificate">
             <h2>Web and Computer Programming Certificate</h2>
-            <div id="filterTags"></div>
+            <div id="filterTags">
+                <a href="#" id="all">All</a>
+                <a href="#" id="cse">CSE</a>
+                <a href="#" id="wdd">WDD</a>
+            </div>
             <div id="courses"></div>
         </section>
 

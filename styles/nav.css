@@ -6,9 +6,23 @@ header {
     width: 100%;
     background-color: var(--p-color);
     color: var(--ptext-color);
-    margin: auto;
     font-size: 0.85rem;
 }
+
+header div h1,
+header div img {
+    margin: auto;
+}
+
+#profilePic {
+    padding: 0.90rem;
+    border-radius: 50%;
+}
+
+header div {
+    display: flex;
+}
+
 
 #hamMenu::before {
     content: "≡";

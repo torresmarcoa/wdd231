@@ -1,0 +1,49 @@
+@media only screen and (min-width: 640px) {
+    header {
+        display: block;
+    }
+
+    header div {
+        display: flex;
+    }
+
+    header div #profilePic {
+        margin-right: 10px;
+    }
+
+    header div h1 {
+        margin-left: 50px;
+        font-size: 2rem;
+    }
+
+    nav {
+        background-color: var(--s-color);
+    }
+
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        display: block;
+        margin: auto;
+    }
+
+    .navigation a {
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.25rem;
+    }
+
+    .navigation a:hover {
+        background-color: var(--p-color);
+    }
+
+    #hamMenu {
+        display: none;
+    }
+
+    .hide-header h1 {
+        display: block;
+    }
+}

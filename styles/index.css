@@ -20,21 +20,16 @@ body {
     text-align: center;
 }
 
-#profilePic {
-    margin: auto;
-    padding: 0.90rem;
-    border-radius: 50%;
-}
-
 #teotihuacan {
     width: 100%;
     height: 100%;
+    margin: auto;
 }
 
 #courseWork,
 #country,
 #certificate {
-    margin: 50px;
+    margin: 20px;
 }
 
 #courseWork h2,
@@ -43,6 +38,45 @@ body {
     background-color: var(--s-color);
     color: var(--ptext-color);
     padding: 1rem;
+}
+
+#certificate #filterTags {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+#certificate #filterTags a {
+    background-color: var(--p-color);
+    color: var(--ptext-color);
+    margin: 10px;
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+#certificate #filterTags a:hover {
+    background-color: var(--s-color);
+}
+
+.completed,
+.incomplete {
+
+    margin: 20px;
+    padding: 0.5rem;
+
+}
+
+.completed {
+    background-color: darkgreen;
+    color: var(--ptext-color);
+}
+
+.incomplete {
+    background-color: darkred;
+    color: var(--ptext-color);
 }
 
 footer {
