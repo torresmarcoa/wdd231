@@ -79,6 +79,10 @@ body {
     color: var(--ptext-color);
 }
 
+#totalCredits {
+    font-weight: 700;
+}
+
 footer {
     background-color: var(--s-color);
     color: var(--ptext-color);

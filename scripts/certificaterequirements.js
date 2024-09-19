@@ -79,6 +79,7 @@ const courses = [
 ]
 
 const coursesDiv = document.getElementById("courses");
+const totalCreditsDiv = document.getElementById("totalCredits");
 const allCourses = document.getElementById("all");
 const wddCourses = document.getElementById("wdd");
 const cseCourses = document.getElementById("cse");
@@ -96,20 +97,27 @@ cseCourses.addEventListener("click", () => {
 });
 
 
-function displayCourses(coursesfiltered) {
+function displayCourses(coursesFiltered) {
     coursesDiv.innerHTML = "";
-    coursesfiltered.forEach(course => {
+    coursesFiltered.forEach(course => {
         const courseSubject = document.createElement("p");
 
         courseSubject.innerHTML = `<h3>${course.subject} ${course.number}</h3>`;
 
         coursesDiv.appendChild(courseSubject)
 
-        if (course.completed == true) {
+        if (course.completed === true) {
             courseSubject.classList.add("completed");
         }
         else {
             courseSubject.classList.add("incomplete");
         }
     });
-}
+
+    const totalCredits = coursesFiltered.reduce((total, course) => {
+        return total + course.credits;
+    }, 0);
+
+    totalCreditsDiv.innerHTML = `<h3>Total Required Credits: ${totalCredits}</h3>`;
+};
+
