@@ -7,3 +7,13 @@ hamButton.addEventListener("click", () => {
     hamButton.classList.toggle("show");
     header.classList.toggle("hide-header");
 });
+
+const currentPage = window.location.href.split('/').pop();
+const navLinks = document.querySelectorAll(".navigation a");
+
+navLinks.forEach(link => {
+    const linkPage = link.href.split('/').pop(); 
+    if (linkPage === currentPage) {
+        link.classList.add("active");
+    }
+});

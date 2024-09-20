@@ -39,6 +39,12 @@
         background-color: var(--p-color);
     }
 
+    .navigation a.active {
+        font-weight: bold;  
+        border-top: 4px solid darkred;
+        border-bottom: var(--s-color);
+    }
+
     #hamMenu {
         display: none;
     }

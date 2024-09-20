@@ -30,11 +30,12 @@ header div {
 
 #hamMenu {
     display: block;
-    font-size: 1.50rem;
     font-weight: 700;
     text-decoration: none;
     color: var(--ptext-color);
-    padding: 1rem;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
 }
 
 .navigation {
@@ -61,6 +62,12 @@ header div {
 .navigation a:active {
     color: var(--ptext-color);
     background-color: var(--s-color);
+}
+
+.navigation a.active {
+    font-weight: bold;  
+    border-bottom: 4px solid darkred;
+    font-style: italic;
 }
 
 .show li {
