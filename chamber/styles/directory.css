@@ -65,18 +65,16 @@ section {
     margin: 20px;
 }
 
-.list section {
-    margin: 0;
-    padding: 0.5rem;
-}
-
-
 .list section img {
     display: none;
 }
 
 .list section h2 {
     font-size: 1rem;
+}
+
+.list section{
+    display: block; 
 }
 
 .list section:nth-child(even) {
