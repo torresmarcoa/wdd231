@@ -5,7 +5,7 @@
             "address": "102 Juárez Ave., Texcoco de Mora, State of Mexico",
             "phone-number": "+52-595-555-1234",
             "websiteUrl": "https://www.supertexdistributors.com",
-            "image": "supertex-logo.jpg",
+            "image": "supertex-logo.webp",
             "membership": 2
         },
         {
@@ -13,7 +13,7 @@
             "address": "78 Hidalgo St., Texcoco de Mora, State of Mexico",
             "phone-number": "+52-595-555-5678",
             "websiteUrl": "https://www.elbuensazon.com.mx",
-            "image": "buen-sazon-icon.jpg",
+            "image": "buen-sazon-icon.webp",
             "membership": 3
         },
         {
@@ -21,7 +21,7 @@
             "address": "256 Nezahualcóyotl Ave., Texcoco de Mora, State of Mexico",
             "phone-number": "+52-595-555-9012",
             "websiteUrl": "https://www.ferreteriamartinez.com.mx",
-            "image": "martinez-logo.jpg",
+            "image": "martinez-logo.webp",
             "membership": 1
         },
         {
@@ -29,7 +29,7 @@
             "address": "45 Benito Juárez St., Texcoco de Mora, State of Mexico",
             "phone-number": "+52-595-555-3456",
             "websiteUrl": "https://www.texcocotech.com",
-            "image": "texcocotech-logo.jpg",
+            "image": "texcocotech-logo.webp",
             "membership": 3
         },
         {
@@ -37,7 +37,7 @@
             "address": "12 Morelos St., Texcoco de Mora, State of Mexico",
             "phone-number": "+52-595-555-7890",
             "websiteUrl": "https://www.panaderialatradicion.com",
-            "image": "latradicion-icon.jpg",
+            "image": "latradicion-icon.webp",
             "membership": 2
         },
         {
@@ -45,7 +45,7 @@
             "address": "23 Allende St., Texcoco de Mora, State of Mexico",
             "phone-number": "+52-595-555-4567",
             "websiteUrl": "https://www.cybercaftexcoco.com.mx",
-            "image": "cybercafe-logo.jpg",
+            "image": "cybercafe-logo.webp",
             "membership": 1
         },
         {
@@ -53,7 +53,7 @@
             "address": "301 Zaragoza St., Texcoco de Mora, State of Mexico",
             "phone-number": "+52-595-555-6543",
             "websiteUrl": "https://www.clinicasanjuan.com.mx",
-            "image": "sanjuan-icon.jpg",
+            "image": "sanjuan-icon.webp",
             "membership": 3
         }
     ]
