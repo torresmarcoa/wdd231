@@ -2,11 +2,15 @@ h1,
 h2,
 h3 {
     font-family: "Raleway", sans-serif;
+    font-display: swap;
+
 }
 
 p,
 a {
     font-family: "Inria Sans", sans-serif;
+    font-display: swap;
+
 }
 
 main h1 {
