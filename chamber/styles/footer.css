@@ -3,6 +3,7 @@ footer {
     color: var(--t-color);
     padding: 1rem;
     margin: auto;
+    margin-top: 100px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }

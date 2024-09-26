@@ -18,8 +18,12 @@
     <link rel="stylesheet" href="styles/nav.css">
     <link rel="stylesheet" href="styles/nav-large.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/directory-large.css">
+
     <script src="scripts/nav.js" defer></script>
     <script src="scripts/footer.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,12 +35,16 @@
 <body>
 
     <header>
-        <img src="images/icon.png" width="40" height="36">
+        <picture>
+            <source srcset="images/icon-large.png" media="(min-width:38rem)">
+            <img src="images/icon.png" alt="Chamber of commerce icon" width="40" height="36">
+        </picture>
+
         <div>
             <h2>Texcoco</h2>
             <p>Chamber of commerce</p>
         </div>
-        <button id="navButton"></button>
+        <button id="navButton" type="button" aria-label="Menu"></button>
     </header>
 
     <nav id="animation">
@@ -49,7 +57,19 @@
     </nav>
 
     <main>
-        <div id="cards"></div>
+        <h1>Business Directory</h1>
+        <div id="toggleView">
+            <button id="gridView" type="button">
+                <img src="images/grid-icon.png" alt="Toggle to grid view" width="16" height="16">
+            </button>
+            <button id="listView" type="button">
+                <img src="images/list-icon.png" alt="Toggle to list view" width="16" height="16">
+            </button>
+        </div>
+        <div>
+            <article id="cards" class="grid">
+            </article>
+        </div>
     </main>
 
     <footer>

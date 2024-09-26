@@ -1,9 +1,10 @@
 @media only screen and (min-width: 38rem) {
 
     header {
-       text-align: center;
-       display: flex;
-       align-self: center;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        font-size: 1.5rem;
     }
 
     #navButton {
@@ -16,7 +17,13 @@
         justify-content: flex-end;
     }
 
+    img {
+        width: auto;
+        height: auto;
+    }
+
     nav {
         grid-template-rows: 1fr;
+        padding: 1rem;
     }
 }

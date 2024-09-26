@@ -1,67 +1,60 @@
 {
-    "company" : [
-
+    "companies": [
         {
-            "name" : "",
-            "address" : "",
-            "phone-number" : "",
-            "websiteUrl" : "",
-            "image" : "",
-            "membership" : 1
+            "name": "SuperTex Distributors",
+            "address": "102 Juárez Ave., Texcoco de Mora, State of Mexico",
+            "phone-number": "+52-595-555-1234",
+            "websiteUrl": "https://www.supertexdistributors.com",
+            "image": "supertex-logo.jpg",
+            "membership": 2
         },
-
         {
-            "name" : "",
-            "address" : "",
-            "phone-number" : "",
-            "websiteUrl" : "",
-            "image" : "",
-            "membership" : 1
+            "name": "El Buen Sazón Restaurante",
+            "address": "78 Hidalgo St., Texcoco de Mora, State of Mexico",
+            "phone-number": "+52-595-555-5678",
+            "websiteUrl": "https://www.elbuensazon.com.mx",
+            "image": "buen-sazon-icon.jpg",
+            "membership": 3
         },
-
         {
-            "name" : "",
-            "address" : "",
-            "phone-number" : "",
-            "websiteUrl" : "",
-            "image" : "",
-            "membership" : 1
+            "name": "Ferretería Martínez",
+            "address": "256 Nezahualcóyotl Ave., Texcoco de Mora, State of Mexico",
+            "phone-number": "+52-595-555-9012",
+            "websiteUrl": "https://www.ferreteriamartinez.com.mx",
+            "image": "martinez-logo.jpg",
+            "membership": 1
         },
-
         {
-            "name" : "",
-            "address" : "",
-            "phone-number" : "",
-            "websiteUrl" : "",
-            "image" : "",
-            "membership" : 1
+            "name": "TexcocoTech",
+            "address": "45 Benito Juárez St., Texcoco de Mora, State of Mexico",
+            "phone-number": "+52-595-555-3456",
+            "websiteUrl": "https://www.texcocotech.com",
+            "image": "texcocotech-logo.jpg",
+            "membership": 3
         },
-
         {
-            "name" : "",
-            "address" : "",
-            "phone-number" : "",
-            "websiteUrl" : "",
-            "image" : "",
-            "membership" : 1
+            "name": "Panadería La Tradición",
+            "address": "12 Morelos St., Texcoco de Mora, State of Mexico",
+            "phone-number": "+52-595-555-7890",
+            "websiteUrl": "https://www.panaderialatradicion.com",
+            "image": "latradicion-icon.jpg",
+            "membership": 2
         },
-
         {
-            "name" : "",
-            "address" : "",
-            "phone-number" : "",
-            "websiteUrl" : "",
-            "image" : "",
-            "membership" : 1
+            "name": "CyberCafé Texcoco",
+            "address": "23 Allende St., Texcoco de Mora, State of Mexico",
+            "phone-number": "+52-595-555-4567",
+            "websiteUrl": "https://www.cybercaftexcoco.com.mx",
+            "image": "cybercafe-logo.jpg",
+            "membership": 1
         },
-
         {
-            "name" : "",
-            "address" : "",
-            "phone-number" : "",
-            "websiteUrl" : "",
-            "image" : "",
-            "membership" : 1
+            "name": "Clínica San Juan",
+            "address": "301 Zaragoza St., Texcoco de Mora, State of Mexico",
+            "phone-number": "+52-595-555-6543",
+            "websiteUrl": "https://www.clinicasanjuan.com.mx",
+            "image": "sanjuan-icon.jpg",
+            "membership": 3
         }
     ]
 }
