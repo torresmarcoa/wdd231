@@ -1,0 +1,33 @@
+{
+    "family_name": "Lopez",
+    "move_in_date": "2024-09-23",
+    "number_of_people": 5,
+    "visited_by_bishopric": true,
+    "individual_family_members": [
+        {
+            "name": "Luis Lopez",
+            "gender": "Male",
+            "birthdate": "1970-02-02"
+        },
+        {
+            "name": "Samantha Lopez",
+            "gender": "Female",
+            "birthdate": "1972-03-12"
+        },
+        {
+            "name": "Roberto Lopez",
+            "gender": "Male",
+            "birthdate": "1993-01-08"
+        },
+        {
+            "name": "Raul Lopez",
+            "gender": "Male",
+            "birthdate": "1995-08-07"
+        },
+        {
+            "name": "Alma Lopez",
+            "gender": "Female",
+            "birthdate": "2000-01-01"
+        }
+    ]
+}

@@ -1,0 +1,67 @@
+{
+    "company" : [
+
+        {
+            "name" : "",
+            "address" : "",
+            "phone-number" : "",
+            "websiteUrl" : "",
+            "image" : "",
+            "membership" : 1
+        },
+
+        {
+            "name" : "",
+            "address" : "",
+            "phone-number" : "",
+            "websiteUrl" : "",
+            "image" : "",
+            "membership" : 1
+        },
+
+        {
+            "name" : "",
+            "address" : "",
+            "phone-number" : "",
+            "websiteUrl" : "",
+            "image" : "",
+            "membership" : 1
+        },
+
+        {
+            "name" : "",
+            "address" : "",
+            "phone-number" : "",
+            "websiteUrl" : "",
+            "image" : "",
+            "membership" : 1
+        },
+
+        {
+            "name" : "",
+            "address" : "",
+            "phone-number" : "",
+            "websiteUrl" : "",
+            "image" : "",
+            "membership" : 1
+        },
+
+        {
+            "name" : "",
+            "address" : "",
+            "phone-number" : "",
+            "websiteUrl" : "",
+            "image" : "",
+            "membership" : 1
+        },
+
+        {
+            "name" : "",
+            "address" : "",
+            "phone-number" : "",
+            "websiteUrl" : "",
+            "image" : "",
+            "membership" : 1
+        }
+    ]
+}
