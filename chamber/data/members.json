@@ -2,7 +2,7 @@
     "companies": [
         {
             "name": "SuperTex Distributors",
-            "address": "102 Juárez Ave., Texcoco de Mora, State of Mexico",
+            "address": "102 Juárez Ave., Texcoco de Mora",
             "phone-number": "+52-595-555-1234",
             "websiteUrl": "https://www.supertexdistributors.com",
             "image": "supertex-logo.webp",
@@ -10,7 +10,7 @@
         },
         {
             "name": "El Buen Sazón Restaurante",
-            "address": "78 Hidalgo St., Texcoco de Mora, State of Mexico",
+            "address": "78 Hidalgo St., Texcoco de Mora",
             "phone-number": "+52-595-555-5678",
             "websiteUrl": "https://www.elbuensazon.com.mx",
             "image": "buen-sazon-icon.webp",
@@ -18,7 +18,7 @@
         },
         {
             "name": "Ferretería Martínez",
-            "address": "256 Nezahualcóyotl Ave., Texcoco de Mora, State of Mexico",
+            "address": "256 Nezahualcóyotl Ave., Texcoco de Mora",
             "phone-number": "+52-595-555-9012",
             "websiteUrl": "https://www.ferreteriamartinez.com.mx",
             "image": "martinez-logo.webp",
@@ -26,7 +26,7 @@
         },
         {
             "name": "TexcocoTech",
-            "address": "45 Benito Juárez St., Texcoco de Mora, State of Mexico",
+            "address": "45 Benito Juárez St., Texcoco de Mora",
             "phone-number": "+52-595-555-3456",
             "websiteUrl": "https://www.texcocotech.com",
             "image": "texcocotech-logo.webp",
@@ -34,7 +34,7 @@
         },
         {
             "name": "Panadería La Tradición",
-            "address": "12 Morelos St., Texcoco de Mora, State of Mexico",
+            "address": "12 Morelos St., Texcoco de Mora",
             "phone-number": "+52-595-555-7890",
             "websiteUrl": "https://www.panaderialatradicion.com",
             "image": "latradicion-icon.webp",
@@ -42,7 +42,7 @@
         },
         {
             "name": "CyberCafé Texcoco",
-            "address": "23 Allende St., Texcoco de Mora, State of Mexico",
+            "address": "23 Allende St., Texcoco de Mora",
             "phone-number": "+52-595-555-4567",
             "websiteUrl": "https://www.cybercaftexcoco.com.mx",
             "image": "cybercafe-logo.webp",
@@ -50,7 +50,7 @@
         },
         {
             "name": "Clínica San Juan",
-            "address": "301 Zaragoza St., Texcoco de Mora, State of Mexico",
+            "address": "301 Zaragoza St., Texcoco de Mora",
             "phone-number": "+52-595-555-6543",
             "websiteUrl": "https://www.clinicasanjuan.com.mx",
             "image": "sanjuan-icon.webp",
