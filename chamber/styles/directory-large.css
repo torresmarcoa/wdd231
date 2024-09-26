@@ -1,0 +1,15 @@
+@media only screen and (min-width: 38rem) {
+
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+
+    .list section{
+        grid-template-columns: repeat(auto-fit,minmax(200px, 1fr)); 
+    }
+
+    .list section p.phone {
+        text-align: center;
+    }
+    
+}
