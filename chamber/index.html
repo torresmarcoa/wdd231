@@ -17,8 +17,10 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/nav-and-footer.css">
     <link rel="stylesheet" href="styles/nav-and-footer-large.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-large.css">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
@@ -27,6 +29,7 @@
 
     <script src="scripts/nav.js" defer></script>
     <script src="scripts/footer.js" defer></script>
+    <script src="scripts/index.js" defer></script>
 
 </head>
 
@@ -48,13 +51,49 @@
     <nav id="animation">
         <ul class="menuLinks">
             <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Business Directory</a></li>
+            <li><a href="directory.html">Business Directory</a></li>
             <li><a href="#">Join</a></li>
             <li><a href="#">Discover</a></li>
         </ul>
     </nav>
 
-    <main></main>
+    <main>
+        <div id="mainGrid">
+            <div id="hero">
+                <picture>
+                    <source srcset="images/hero-large.webp" media="(min-width:38rem)">
+                    <img src="images/hero-small.webp" alt="Nezahualcoyotl's baths Texcoco" width="768" height="960">
+                </picture>
+            </div>
+            <div id="btnContainer">
+                <button id="join" aria-label="Join Us!">Join Us!</button>
+            </div>
+
+
+            <div id="events">
+                <h3>Events</h3>
+                <p>No current events scheduled</p>
+            </div>
+
+            <div id="currentWeather">
+                <h3>Current Weather</h3>
+                <div id="weatherdiv">
+                    <div id="iconDiv"></div>
+                    <div id="textDiv"></div>
+                </div>
+
+            </div>
+
+            <div id="forecast">
+                <h3>Weather forecast</h3>
+            </div>
+        </div>
+
+        <div>
+            <article id="cards">
+            </article>
+        </div>
+    </main>
 
     <footer>
         <div>
