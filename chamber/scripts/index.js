@@ -38,6 +38,9 @@ async function forecast() {
 };
 
 const displayWeather = (data) => {
+    weatherIcon.innerHTML = "";
+    weatherText.innerHTML = "";
+
     const icon = document.createElement("img");
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     const desc = data.weather[0].description;
@@ -77,13 +80,14 @@ const displayWeather = (data) => {
 }
 
 const displayForecast = (data) => {
+
     const tomorrow = document.createElement("p");
     const afterTomorrow = document.createElement("p");
     const threeDaysAfter = document.createElement("p");
 
-    const tomorrowDate = new Date(data.list[3].dt * 1000);
-    const afterTomorrowDate = new Date(data.list[11].dt * 1000);
-    const threeDaysAfterDate = new Date(data.list[19].dt * 1000);
+    const tomorrowDate = new Date(data.list[5].dt * 1000);
+    const afterTomorrowDate = new Date(data.list[15].dt * 1000);
+    const threeDaysAfterDate = new Date(data.list[25].dt * 1000);
 
     tomorrow.innerHTML = `${tomorrowDate.toDateString()}: <strong>${data.list[3].main.temp}&deg;C</strong>`;
     afterTomorrow.innerHTML = `${afterTomorrowDate.toDateString()}: <strong>${data.list[11].main.temp}&deg;C</strong>`;
