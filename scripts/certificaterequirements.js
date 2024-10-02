@@ -100,9 +100,10 @@ cseCourses.addEventListener("click", () => {
 function displayCourses(coursesFiltered) {
     coursesDiv.innerHTML = "";
     coursesFiltered.forEach(course => {
-        const courseSubject = document.createElement("p");
+        const courseSubject = document.createElement("button");
 
         courseSubject.innerHTML = `<h3>${course.subject} ${course.number}</h3>`;
+        courseSubject.classList.add("openBtn");
 
         coursesDiv.appendChild(courseSubject)
 
@@ -111,13 +112,39 @@ function displayCourses(coursesFiltered) {
         }
         else {
             courseSubject.classList.add("incomplete");
-        }
+        } 
+
+        courseSubject.addEventListener("click", () => {
+        displayCourseDetails(course);
+    }); 
+
     });
 
     const totalCredits = coursesFiltered.reduce((total, course) => {
         return total + course.credits;
     }, 0);
 
+   
     totalCreditsDiv.innerHTML = `<h3>Total Required Credits: ${totalCredits}</h3>`;
 };
 
+const modal = document.getElementById("course-details");
+
+const displayCourseDetails = (course) => {
+    modal.innerHTML = "";
+    modal.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits:</strong> ${course.credits}</p>
+    <p><strong>Certificate:</strong> ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies:</strong> ${course.technology.join(", ")}</p>
+    `;
+
+    modal.showModal();
+
+    closeModal.addEventListener("click", () => {
+        modal.close();
+    })
+}
