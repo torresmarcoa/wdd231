@@ -8,6 +8,7 @@ h1,
 h2,
 h3 {
     font-family: "Inria Sans", sans-serif;
+    animation: slideIn;
 }
 
 p,
@@ -29,6 +30,23 @@ body {
 #country,
 #certificate {
     margin: 20px;
+}
+
+#certificate button, 
+#certificate a {
+    animation: slideIn 3s;
+}
+
+#certificate button.completed:hover {
+    background-color: rgb(10, 73, 4);
+}
+
+#certificate button.incomplete:hover {
+    background-color: rgb(58, 2, 2);
+}
+
+#certificate button.closeModal {
+    animation: none;
 }
 
 #courseWork h2,
@@ -115,4 +133,16 @@ footer {
     text-align: center;
     padding: 1rem;
     margin: auto;
+}
+
+@keyframes slideIn {
+    0%  {
+        translate: 90%;
+        background-color: var(--s-color);
+        color: var(--ptext-color);
+    }
+
+    100% {
+        translate: 0;
+    }
 }
