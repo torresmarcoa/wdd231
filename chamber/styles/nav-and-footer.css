@@ -7,12 +7,12 @@
 header {
     display: grid;
     grid-template-columns: 44px auto 44px;
-    align-items: end;
+    align-items: center;
     background-color: var(--s1-bcolor);
+    font-size: .8rem;
 }
 
-header div p,
-header div h2 {
+header div h1 {
     margin: 2px;
 }
 
