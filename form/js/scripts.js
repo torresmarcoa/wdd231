@@ -20,4 +20,4 @@ showInfo.innerHTML =  `
 <p>Appointment for ${show("firs")} ${show("last")}</p>
 <p>Proxy ${show("ordinance")} on ${show("fecha")} in the ${show("location")} Temple. </p>
 <p>Your Phone: ${show("phone")}</p>
-<p>Your E-mail: <a href="mailto:${show("email")} target="_blank"">${show("email")}</a></p>`
+<p>Your E-mail: <a href="mailto:${show("email")}">${show("email")}</a></p>`
