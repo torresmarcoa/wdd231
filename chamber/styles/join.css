@@ -170,6 +170,10 @@ section label {
     width: 80%;
 }
 
+#levelsInfo h2 {
+    margin-top: 50px;
+} 
+
 #levelsInfo h3 {
     background-color: var(--p-bcolor);
     color: var(--t-color);
@@ -204,6 +208,9 @@ section label {
     top: 23px;
     right: 23px;
     padding: .5rem 1rem;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 
 #membershipLevels #closeModal:hover {

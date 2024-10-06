@@ -12,4 +12,8 @@
         grid-column: 2/3;
     }
 
+    #levelsInfo h2 {
+        margin-top: 1rem;
+    } 
+
 }

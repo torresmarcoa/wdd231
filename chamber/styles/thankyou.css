@@ -1,31 +1,38 @@
+
 h1,
 h2,
 h3 {
     text-align: center;
-    font-size: 1rem;
 }
 
-#showData{
-    display: block;
-    margin: 20px;
+#showData {
+    width: 90%;
+    max-width: 600px; 
+    margin: auto; 
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: var(--t-color);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    display: grid; 
+    grid-template-columns: 1fr; 
+    gap: 1rem; 
 }
 
-
+#showData h4,
 #showData p {
-    text-align: left;
-    width: 100%; 
-    max-width: 400px;
+    padding: 0.5rem; 
+    margin: 0; 
+    text-align: left; 
 }
 
-@media only screen and (min-width: 40rem) {
-    h1,
-    h2 {
-        font-size: 2rem;
+@media (min-width: 40rem) {
+    #showData {
+        grid-template-columns: repeat(2, 1fr); 
     }
-    #showData{
-        display: flex;
+}
+
+@media (max-width: 30rem) {
+    #showData {
         flex-direction: column;
-        align-items: center;
     }
-    
 }

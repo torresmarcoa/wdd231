@@ -16,12 +16,17 @@ const show = (key) => {
 
 const showInfo = document.getElementById("showData");
 showInfo.innerHTML = `
-<h3>Your information:</h3>
-<p>First Name: ${show("firstName")}</p>
-<p>Last Name: ${show("lastName")}</p>
-<p>E-mail: ${show("email")}</p>
-<p>Phone Number: ${show("phone")}</p>
-<p>Organization Name: ${show("OrgName")}</p>
-<p>Membership Level: ${show("mLevel")}</p>
-<p>${show("timestamp").replaceAll("+", " ").replaceAll("%2C", ",").replaceAll("%3A", ":")}</p>
+<h4>First Name:</h4>
+<p>${show("firstName")}</p>
+<h4>Last Name:</h4>
+<p>${show("lastName")}</p>
+<h4>E-mail:</h4>
+<p>${show("email")}</p>
+<h4>Phone Number: </h4>
+<p>${show("phone")}</p>
+<h4>Organization Name: </h4>
+<p>${show("OrgName")}</p>
+<h4>Membership Level:</h4>
+<p>${show("mLevel")}</p>
+<p id="date">${show("timestamp").replaceAll("+", " ").replaceAll("%2C", ",").replaceAll("%3A", ":")}</p>
 ` 
