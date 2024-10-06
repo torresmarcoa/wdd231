@@ -8,88 +8,89 @@ form {
     align-items: center;
     margin: 1rem;
     font-weight: 600;
-
-    label {
-        display: block;
-        color: var(--p-bcolor);
-        padding-top: .2rem;
-        font-size: 1.15rem;
-    }
-
-    h3 {
-        font-size: 1.3rem;
-        color: var(--p-bcolor);
-        margin: 1.5rem 0 .5rem 0;
-    }
-
-    input[type=text],
-    input[type=tel],
-    input[type=date],
-    input[type=email],
-    textarea,
-    select {
-        display: block;
-        margin: .1rem 0 1rem 0;
-        padding: .3rem;
-        border-radius: 4px;
-        border-left-width: 5px;
-        font-size: 1rem;
-        width: 250px;
-    }
-
-    input:required {
-        border-left-color: rgb(255, 46, 46);
-    }
-
-    input:focus {
-        border-left-color: yellow;
-        outline: none;
-    }
-
-    input:required:valid {
-        border-left-color: lawngreen;
-    }
-
-    input[type=submit] {
-        border: none;
-        text-align: center;
-        background-color: var(--p-bcolor);
-        color: var(--t-color);
-        border-radius: 1rem;
-        padding: .75rem 1.5rem;
-        margin: 2rem 0;
-        font-size: 1.2rem;
-        cursor: pointer;
-        transition: background-color 0.3s, color 0.3s, font-size 0.3s, transform 0.3s;
-    }
-
-    input[type=submit]:hover {
-        background-color: var(--t-color);
-        border: 2px solid var(--p-bcolor);
-        color: var(--p-bcolor);
-        transform: scale(1.05);
-    }
-
-    input[type=submit]:focus {
-        outline: 2px dashed var(--p-bcolor);
-    }
-
-
-    input[type=radio] {
-        width: 20px;
-        height: 20px;
-        margin-right: 10px;
-        cursor: pointer;
-    }
-
-    section label {
-        display: flex;
-        align-items: center;
-        padding: 1rem;
-        color: var(--p-bcolor);
-        font-size: 1.1rem;
-    }
 }
+
+label {
+    display: block;
+    color: var(--p-bcolor);
+    padding-top: .2rem;
+    font-size: 1.15rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+    color: var(--p-bcolor);
+    margin: 1.5rem 0 .5rem 0;
+}
+
+input[type=text],
+input[type=tel],
+input[type=date],
+input[type=email],
+textarea,
+select {
+    display: block;
+    margin: .1rem 0 1rem 0;
+    padding: .3rem;
+    border-radius: 4px;
+    border-left-width: 5px;
+    font-size: 1rem;
+    width: 250px;
+}
+
+input:required {
+    border-left-color: rgb(255, 46, 46);
+}
+
+input:focus {
+    border-left-color: yellow;
+    outline: none;
+}
+
+input:required:valid {
+    border-left-color: lawngreen;
+}
+
+input[type=submit] {
+    border: none;
+    text-align: center;
+    background-color: var(--p-bcolor);
+    color: var(--t-color);
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, font-size 0.3s, transform 0.3s;
+}
+
+input[type=submit]:hover {
+    background-color: var(--t-color);
+    border: 2px solid var(--p-bcolor);
+    color: var(--p-bcolor);
+    transform: scale(1.05);
+}
+
+input[type=submit]:focus {
+    outline: 2px dashed var(--p-bcolor);
+}
+
+
+input[type=radio] {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+section label {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    color: var(--p-bcolor);
+    font-size: 1.1rem;
+}
+
 
 #membershipLevels {
     text-align: center;
@@ -210,5 +211,5 @@ form {
 }
 
 ::backdrop {
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
 }
