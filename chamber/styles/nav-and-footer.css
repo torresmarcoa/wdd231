@@ -4,6 +4,21 @@
     --t-color: #ffffff;
 }
 
+h1,
+h2,
+h3,
+button {
+    font-family: "Raleway", sans-serif;
+}
+
+p,
+a,
+form,
+h4,
+li {
+    font-family: "Inria Sans", sans-serif;
+}
+
 header {
     display: grid;
     grid-template-columns: 44px auto 44px;

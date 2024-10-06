@@ -1,0 +1,31 @@
+h1,
+h2,
+h3 {
+    text-align: center;
+    font-size: 1rem;
+}
+
+#showData{
+    display: block;
+    margin: 20px;
+}
+
+
+#showData p {
+    text-align: left;
+    width: 100%; 
+    max-width: 400px;
+}
+
+@media only screen and (min-width: 40rem) {
+    h1,
+    h2 {
+        font-size: 2rem;
+    }
+    #showData{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
