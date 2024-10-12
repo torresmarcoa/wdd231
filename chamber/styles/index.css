@@ -1,6 +1,18 @@
-#hero img {
+img {
     width: 100%;
+    height: auto;
+}
+
+div #hero{
+    display: flex;
+    justify-content: center;
+    background-color: var(--p-bcolor);
+}
+
+#hero img {
+    width: auto;
     height: 100%;
+    
 }
 
 #btnContainer {
@@ -94,6 +106,22 @@ section {
 }
 
 #cards img {
-    max-width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
+}
+
+#discover-grid {
+    background-color: rgba(44, 62, 80, 0.9);
+
+}
+
+.sidebar .card{
+    margin: 15px; 
+    padding: 10px;
+    border-radius: 5px; 
+}
+
+.sidebar h2,
+.sidebar h3 {
+    text-align: center;
 }
