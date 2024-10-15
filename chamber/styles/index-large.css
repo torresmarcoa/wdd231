@@ -54,6 +54,7 @@
         flex-direction: column;
         justify-content: center; 
         flex-wrap: wrap;
+        margin-right: 35px;
     }
     
     .imagessection img {
@@ -63,9 +64,9 @@
     }
 
     .imagessection img:hover {
-        transform: scale(1.05); /* Scale the image */
-        opacity: 0.9; /* Change opacity */
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Add shadow */
-        transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+        transform: scale(1.05); 
+        opacity: 0.9;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+        transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
     }
 }
