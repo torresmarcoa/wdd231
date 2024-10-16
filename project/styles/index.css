@@ -1,0 +1,18 @@
+:root {
+    --p-color: #1C1F4A;
+    --s-color: #F0A500;
+    --s-bcolor: #2C3E50;
+    --text-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+th {
+    font-family: "Merriweather", serif;
+}
+
+p,
+a {
+    font-family: "Open Sans", sans-serif;
+}
