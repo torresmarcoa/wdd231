@@ -29,7 +29,7 @@ a {
 }
 
 #imagesection {
-    margin: 15px;
+    margin: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,6 +37,8 @@ a {
 
 #history {
     margin: 15px;
+    text-align: justify;
+    font-size: 1.2rem;
 }
 
 #newsletterbtndiv {
@@ -50,12 +52,15 @@ a {
     padding: 1rem;
     border-radius: 1rem;
     background-color: var(--s-bcolor);
-    color: var(--text-color);        
+    color: var(--text-color);      
+    transition: background-color 0.3s, color 0.3s, font-size 0.3s, transform 0.3s;  
+    cursor: pointer;
 }
 
 #newsletterbtn:hover {
     background-color: var(--s-color);
     color: var(--p-color);
+    transform: scale(1.1);
 }
 
 @media only screen and (min-width: 38rem) {
@@ -84,7 +89,6 @@ a {
         grid-column: 2/3;
         grid-row: 2/3;
         margin: 15px;
-        text-align: justify;
     }
 
     #history h2 {
