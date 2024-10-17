@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Astral Archives</title>
-    <meta name="author" content="Marco Torres">
-    <meta name="description" content="Home Page for Astral Archives">
-    <link rel="icon" href="favicon.ico">
+    <meta name="author" content="Marco Torres" />
+    <meta name="description" content="Home Page for Astral Archives" />
+    <link rel="icon" href="favicon.ico" />
 
-    <meta property="og:title" content="Astral Archives">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="">
-    <meta property="og:url" content="https://torresmarcoa.github.io/wdd231/project/index.html">
+    <meta property="og:title" content="Astral Archives" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="" />
+    <meta
+      property="og:url"
+      content="https://torresmarcoa.github.io/wdd231/project/index.html"
+    />
 
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/nav-and-footer.css">
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/nav-and-footer.css" />
+    <link rel="stylesheet" href="styles/index.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,53 +28,96 @@
     />
 
     <script src="scripts/nav.js" defer></script>
-    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <header>
-        <picture>
-            <source srcset="images/icon-large.webp" media="(min-width:38rem)">
-            <img src="images/icon.webp" alt="Astral Archives icon" width="40" height="36" loading="lazy">
-        </picture>
-        <div>
-            <h1>Astral Archives</h1>
-        </div>
-        <button id="navButton" type="button" aria-label="Menu"></button>
+      <img src="images/icon.webp" alt="Astral Archives icon" loading="lazy" />
+      <div>
+        <h1>Astral Archives</h1>
+      </div>
+      <button id="navButton" type="button" aria-label="Menu"></button>
     </header>
 
     <nav id="animation">
-        <ul class="menuLinks">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="agencies.html">Space Agencies</a></li>
-            <li><a href="newsletter.html">Our Newsletter</a></li>
-        </ul>
+      <ul class="menuLinks">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="agencies.html">Space Agencies</a></li>
+        <li><a href="newsletter.html">Our Newsletter</a></li>
+      </ul>
     </nav>
 
-    <main>
-        
+    <main id="maingrid">
+      <div id="heroimages">
+        <img src="images/hero-large.webp" alt="A photo of a Nebula" />
+      </div>
+      <div id="imagesection">
+        <img
+          src="images/astronaut.webp"
+          alt="An astronaut"
+          width="640"
+          height="424"
+        />
+      </div>
+      <div id="history">
+        <h2>Brief history:</h2>
+        <h3>
+          Humanity's efforts to explore space are a testament to curiosity,
+          ingenuity, and a desire to push the boundaries of the unknown.
+        </h3>
+        <p>
+          The journey began in the mid-20th century, during the Cold War, when
+          the Soviet Union launched Sputnik 1 on October 4, 1957, the first
+          artificial satellite to orbit the Earth. This milestone ignited the
+          Space Race between the USSR and the United States, culminating in
+          numerous achievements. Just four years later, on April 12, 1961,
+          Soviet cosmonaut Yuri Gagarin became the first human to journey into
+          space aboard Vostok 1.
+        </p>
+        <p>
+          In response, the U.S. rapidly advanced its space efforts, and on July
+          20, 1969, NASA's Apollo 11 mission achieved what many considered
+          impossible: Neil Armstrong and Buzz Aldrin became the first humans to
+          walk on the Moon, with Armstrong famously declaring, "That's one small
+          step for man, one giant leap for mankind."
+        </p>
+        <p>
+          Space exploration expanded beyond the initial rivalry. The creation of
+          the International Space Station (ISS) in 1998 marked a new era of
+          international cooperation, with astronauts from around the world
+          living and working in space for extended periods.
+        </p>
+        <p>
+          The 21st century brought renewed excitement with private companies
+          like SpaceX, Blue Origin, and Virgin Galactic. SpaceX's achievements,
+          such as reusable rockets and its involvement in future Mars
+          colonization plans, signal the potential for a new era of commercial
+          and civilian space travel. Looking ahead, humanity continues to dream
+          big with plans for returning to the Moon, missions to Mars, and
+          further exploration of distant worlds.
+        </p>
+      </div>
+      <div id="newsletterbtndiv">
+        <a href="newsletter.html">
+          <button id="newsletterbtn" aria-label="Join our Newsletter">
+            Join our Newsletter
+          </button>
+        </a>
+      </div>
     </main>
 
     <footer>
-        <div>
-            <p><strong>Astral Archives</strong></p>
-            <p>Colon Street 5670</p>
-            <p>Texcoco de Mora</p>
-            <p>info@texcococh.org</p>
-            <p>(+52-1) 55-172-9797</p>
-        </div>
+      <div>
+        <p><strong>Astral Archives</strong></p>
+        <p><span id="currentYear"></span>Astral Archives</p>
+        <p id="lastModified"></p>
+      </div>
 
-        <div>
-            <p>WDD231 Class Project</p>
-            <p>Marco Torres</p>
-            <p><span id="currentYear"></span>Astral Archives</p>
-            <p id="lastModified"></p>
-        </div>
-
-
+      <div>
+        <p>WDD231 Class Project</p>
+        <p>Marco Torres</p>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
