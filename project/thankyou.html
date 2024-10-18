@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Astral Archives</title>
     <meta name="author" content="Marco Torres" />
-    <meta name="description" content="Newsletter Page for Astral Archives" />
+    <meta name="description" content="Home Page for Astral Archives" />
     <link rel="icon" href="favicon.ico" />
 
-    <meta property="og:title" content="Astral Archives | Newsletter" />
+    <meta property="og:title" content="Astral Archives" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="" />
     <meta
       property="og:url"
-      content="https://torresmarcoa.github.io/wdd231/project/newsletter.html"
+      content="https://torresmarcoa.github.io/wdd231/project/index.html"
     />
 
     <link rel="stylesheet" href="styles/normalize.css" />
@@ -42,60 +42,13 @@
 
     <nav id="animation">
       <ul class="menuLinks">
-        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="#">Home</a></li>
         <li><a href="agencies.html">Space Agencies</a></li>
-        <li class="active"><a href="newsletter.html">Our Newsletter</a></li>
+        <li><a href="newsletter.html">Our Newsletter</a></li>
       </ul>
     </nav>
 
-    <main id="newslettergrid">
-      <form method="GET" action="thankyou.html" class="form">
-        <h2>Join our Newsletter</h2>
-        <label
-          >First Name:
-          <input
-            type="text"
-            name="firstName"
-            required
-            autocomplete="given-name"
-            title="Your First Name"
-        /></label>
-        <label
-          >Last Name:
-          <input
-            type="text"
-            name="lastName"
-            required
-            autocomplete="family-name"
-            title="Your Last Name"
-        /></label>
-        <label
-          >E-mail:
-          <input
-            type="email"
-            name="email"
-            required
-            placeholder="someone@domain.name"
-            autocomplete="email"
-        /></label>
-        <label
-          >Phone Number:
-          <input
-            type="tel"
-            name="phone"
-            required
-            placeholder="555 555 555"
-            autocomplete="tel"
-        /></label>
-
-        <h3>Preferred Language</h3>
-        <section>
-          <label><input type="radio" name="language" value="Spanish"> Spanish</label>
-          <label><input type="radio" name="language" value="English"> English</label>
-        </section>
-
-        <input type="submit" value="Subscribe to our newsletter">
-      </form>
+    <main>
     </main>
 
     <footer>
