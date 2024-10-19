@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Astral Archives</title>
+    <meta name="author" content="Marco Torres" />
+    <meta name="description" content="Home Page for Astral Archives" />
+    <link rel="icon" href="favicon.ico" />
+
+    <meta property="og:title" content="Astral Archives" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="" />
+    <meta
+      property="og:url"
+      content="https://torresmarcoa.github.io/wdd231/project/index.html"
+    />
+
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/nav-and-footer.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="scripts/nav.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/agencies.js" type="module" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <img src="images/icon.webp" alt="Astral Archives icon" loading="lazy" />
+      <div>
+        <h1>Astral Archives</h1>
+      </div>
+      <button id="navButton" type="button" aria-label="Menu"></button>
+    </header>
+
+    <nav id="animation">
+      <ul class="menuLinks">
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="agencies.html">Space Agencies</a></li>
+        <li><a href="newsletter.html">Our Newsletter</a></li>
+      </ul>
+    </nav>
+
+    <main id="agenciesgrid"></main>
+    <dialog id="info"></dialog>
+    <footer>
+      <div>
+        <p><strong>Astral Archives</strong></p>
+        <p><span id="currentYear"></span>Astral Archives</p>
+        <p id="lastModified"></p>
+      </div>
+
+      <div>
+        <p>WDD231 Class Project</p>
+        <p>Marco Torres</p>
+      </div>
+    </footer>
+  </body>
+</html>
