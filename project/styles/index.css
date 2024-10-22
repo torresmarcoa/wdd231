@@ -51,7 +51,10 @@ button {
   align-items: center;
 }
 
-#newsletterbtn {
+#newsletterbtn,
+#before2000,
+#after2000,
+#all {
   margin: 20px;
   padding: 1rem;
   border-radius: 1rem;
@@ -61,7 +64,10 @@ button {
   cursor: pointer;
 }
 
-#newsletterbtn:hover {
+#newsletterbtn:hover,
+#before2000:hover,
+#after2000:hover,
+#all:hover {
   background-color: var(--s-color);
   color: var(--p-color);
   transform: scale(1.1);
@@ -181,6 +187,10 @@ section label {
     text-align: left;
 }
 
+#agenciesmain {
+  margin: 1rem;
+}
+
 #agenciesgrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
@@ -270,14 +280,24 @@ section label {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  background-color: var(--s-bcolor);
+  color: var(--text-color);
+
 }
 
-#membershipLevels #closeModal:hover {
+#closeModal:hover {
   color: darkred;
+  background-color: var(--text-color);
+  font-weight: 800;
 }
 
 ::backdrop {
   background-color: rgba(0, 0, 0, 0.5);
+}
+#buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (min-width: 40rem) {

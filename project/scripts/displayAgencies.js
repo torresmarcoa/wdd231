@@ -1,8 +1,21 @@
 import { displayAgencyDetail } from "./modal.js";
 
-export const displayAgencies = (agencies, agenciesmain) => {
+export const displayAgencies = (agencies, agenciesmain, filterYear) => {
     agenciesmain.innerHTML = "";
-    agencies.forEach(agency => {
+
+    const filteredAgencies = agencies
+    .filter(agency => agency.founding_year)
+    .filter(agency => {
+        if (!filterYear) {
+            return true;
+        }
+        return filterYear === "before2000" 
+            ? agency.founding_year < 2000 
+            : agency.founding_year >= 2000;
+    });
+
+
+    filteredAgencies.forEach(agency => {
         const card = document.createElement("section")
         const name = document.createElement("h3"); 
         const country = document.createElement("h4");
@@ -19,8 +32,8 @@ export const displayAgencies = (agencies, agenciesmain) => {
         if (agency.image_url) {
             image.setAttribute("src", agency.logo_url);
             image.setAttribute("alt", agency.name);
-            image.setAttribute("width", "300"); 
-            image.setAttribute("height", "300");
+            image.setAttribute("width", "250"); 
+            image.setAttribute("height", "250");
         } else {   
             image.setAttribute("src", "images/placeholder.webp"); 
             image.setAttribute("alt", "No image available");
