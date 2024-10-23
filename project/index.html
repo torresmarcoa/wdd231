@@ -29,13 +29,44 @@
 
     <script src="scripts/nav.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/darkmode.js" defer></script>
   </head>
 
   <body>
     <header>
-      <img src="images/icon.webp" alt="Astral Archives icon" loading="lazy" />
+      <picture>
+        <source
+          id="iconLarge"
+          srcset="images/icon.webp"
+          media="(min-width:800px)"
+        />
+        <img
+          id="iconSmall"
+          src="images/icon-small.webp"
+          alt="Astral Archives icon"
+          loading="lazy"
+          width="60"
+          height="60"
+        />
+      </picture>
       <div>
         <h1>Astral Archives</h1>
+      </div>
+      <div id="darkModeDiv">
+        <button id="toggleDarkMode">
+          <picture>
+            <source
+              id="dark-modeLarge"
+              srcset="images/dark-mode.webp"
+              media="(min-width:800px)"
+            />
+            <img
+              id="dark-modeSall"
+              src="images/dark-mode-small.webp"
+              alt="darkmode"
+            />
+          </picture>
+        </button>
       </div>
       <button id="navButton" type="button" aria-label="Menu"></button>
     </header>
@@ -50,22 +81,42 @@
 
     <main id="maingrid">
       <div id="heroimages">
-        <img src="images/hero-large.webp" alt="A photo of a Nebula" />
+        <picture>
+          <source
+            srcset="images/hero-large.webp"
+            media="(min-width:38rem)"
+            loading="lazy"
+          />
+          <img
+            src="images/hero-small.webp"
+            alt="A photo of a Nebula"
+            width="618"
+            height="773"
+            loading="lazy"
+          />
+        </picture>
       </div>
       <div id="imagesection">
-        <img
-          src="images/astronaut.webp"
-          alt="An astronaut"
-          width="640"
-          height="424"
-        />
+        <picture>
+          <source
+            srcset="images/astronaut.webp"
+            media="(min-width:38rem)"
+            loading="lazy"
+          />
+          <img
+            src="images/astronaut-small.webp"
+            alt="An astronaut"
+            width="480"
+            height="480"
+            loading="lazy"
+          />
+        </picture>
       </div>
       <div id="history">
-        <h2>Brief history:</h2>
-        <h3>
+        <h2>
           Humanity's efforts to explore space are a testament to curiosity,
           ingenuity, and a desire to push the boundaries of the unknown.
-        </h3>
+        </h2>
         <p>
           The journey began in the mid-20th century, during the Cold War, when
           the Soviet Union launched Sputnik 1 on October 4, 1957, the first

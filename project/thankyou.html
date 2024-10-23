@@ -30,13 +30,44 @@
     <script src="scripts/nav.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/thankyou.js" defer></script>
+    <script src="scripts/darkmode.js" defer></script>
   </head>
 
   <body>
     <header>
-      <img src="images/icon.webp" alt="Astral Archives icon" loading="lazy" />
+      <picture>
+        <source
+          id="iconLarge"
+          srcset="images/icon.webp"
+          media="(min-width:800px)"
+        />
+        <img
+          id="iconSmall"
+          src="images/icon-small.webp"
+          alt="Astral Archives icon"
+          loading="lazy"
+          width="60"
+          height="60"
+        />
+      </picture>
       <div>
         <h1>Astral Archives</h1>
+      </div>
+      <div id="darkModeDiv">
+        <button id="toggleDarkMode">
+          <picture>
+            <source
+              id="dark-modeLarge"
+              srcset="images/dark-mode.webp"
+              media="(min-width:800px)"
+            />
+            <img
+              id="dark-modeSall"
+              src="images/dark-mode-small.webp"
+              alt="darkmode"
+            />
+          </picture>
+        </button>
       </div>
       <button id="navButton" type="button" aria-label="Menu"></button>
     </header>

@@ -37,8 +37,8 @@ export const displayAgencies = (agencies, agenciesmain, filterYear) => {
         } else {   
             image.setAttribute("src", "images/placeholder.webp"); 
             image.setAttribute("alt", "No image available");
-            image.setAttribute("width", "300"); 
-            image.setAttribute("height", "300");
+            image.setAttribute("width", "250"); 
+            image.setAttribute("height", "250");
         }
 
         image.setAttribute("loading", "lazy");
