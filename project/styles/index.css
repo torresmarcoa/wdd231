@@ -389,6 +389,10 @@ dialog{
   margin-bottom: 20px;
 }
 
+body.dark-mode #attributionsdiv a{
+  color: var(--text-color);
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
