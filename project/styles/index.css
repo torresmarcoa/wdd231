@@ -25,7 +25,7 @@ button {
   width: 100%;
   height: 100%;
   opacity: 0;
-  animation: fadeIn 3s ease-in forwards;
+  animation: fadeIn 2s ease-in forwards;
 }
 
 #imagesection img {
@@ -58,9 +58,15 @@ button {
 }
 
 #newsletterbtn,
+#attributions {
+  text-decoration: none;
+}
+
+#newsletterbtn,
 #before2000,
 #after2000,
-#all {
+#all,
+#attributions {
   margin: 10px;
   padding: 1rem;
   border-radius: 1rem;
@@ -77,6 +83,7 @@ button {
 #newsletterbtn:hover,
 #before2000:hover,
 #after2000:hover,
+#attributions:hover,
 #all:hover {
   background-color: var(--s-color);
   color: var(--p-color);
@@ -243,6 +250,7 @@ body.dark-mode #agenciesgrid section {
   margin: 20px 0;
 }
 
+#agenciesgrid section h2,
 #agenciesgrid section h3,
 #agenciesgrid section h4,
 #agenciesgrid section p,
@@ -310,6 +318,7 @@ body.dark-mode #agenciesgrid section button:hover {
   top: 23px;
   right: 23px;
   padding: 0.5rem 1rem;
+  border-radius: 1rem;
   justify-content: center;
   align-items: center;
   cursor: pointer;
@@ -343,6 +352,11 @@ body.dark-mode {
   color: var(--text-color);
 }
 
+dialog{
+  background-color: rgb(88, 87, 87);
+  color: var(--text-color);
+}
+
 #toggleDarkMode {
   display: flex;
   background: none;
@@ -356,17 +370,33 @@ body.dark-mode {
   height: 30px;
 }
 
-#toggleDarkMode:hover {
-  scale: 1.5;
+#name{
+  margin-bottom: 30px;
 }
+
+#toggleDarkMode:hover {
+  transform: scale(1.5);
+}
+
+#attributionsdiv{
+  margin: 20px;
+}
+
+#agencyImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
-    scale: 0.95;
+    transform: scale(.95);
   }
   100% {
     opacity: 1;
-    scale: 1;
+    transform: scale(1);
   }
 }
 
@@ -432,5 +462,14 @@ body.dark-mode {
   #newsletterbtndiv {
     grid-column: 1/3;
     grid-row: 3/4;
+  }
+
+  #attributions {
+    padding: 0.8rem;
+    margin: auto;
+  }
+  
+  #name{
+    margin-bottom: 30px;
   }
 }

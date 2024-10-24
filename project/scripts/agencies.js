@@ -16,6 +16,7 @@ async function agenciesjson() {
         if (response.ok) {
             const data = await response.json();
             agenciesData = data.results
+            console.log(agenciesData)
             displayAgencies(agenciesData, agenciesmain);
         } else {
             throw new Error(await response.text());

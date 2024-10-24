@@ -17,36 +17,22 @@ export const displayAgencies = (agencies, agenciesmain, filterYear) => {
 
     filteredAgencies.forEach(agency => {
         const card = document.createElement("section")
-        const name = document.createElement("h3"); 
-        const country = document.createElement("h4");
-        const image = document.createElement("img")
+        const name = document.createElement("h2"); 
+        const country = document.createElement("h3");
+        const type = document.createElement("h4");
         const foundingyear = document.createElement("p");
         const moredetailsbtn = document.createElement("button");
 
 
-        name.innerHTML = `Name: ${agency.name}`; 
+        name.innerHTML = agency.name; 
         country.innerHTML = `Country: ${agency.country_code}`;
+        type.innerHTML = `Agency Type: ${agency.type}`;
         foundingyear.innerHTML = `Foundin Year: ${agency.founding_year}`;
         moredetailsbtn.innerHTML = "More Details";
 
-        if (agency.image_url) {
-            image.setAttribute("src", agency.logo_url);
-            image.setAttribute("alt", agency.name);
-            image.setAttribute("width", "250"); 
-            image.setAttribute("height", "250");
-        } else {   
-            image.setAttribute("src", "images/placeholder.webp"); 
-            image.setAttribute("alt", "No image available");
-            image.setAttribute("width", "250"); 
-            image.setAttribute("height", "250");
-        }
-
-        image.setAttribute("loading", "lazy");
-
-
-        card.appendChild(image); 
         card.appendChild(name); 
         card.appendChild(country); 
+        card.appendChild(type);
         card.appendChild(foundingyear); 
         card.appendChild(moredetailsbtn);
 
